@@ -2,7 +2,7 @@
 
 This fixture uses inherited sockets on macOS/Linux. Keeping the socket open
 while passing it to the server avoids a race where another process steals a
-port between choosing it and starting Uvicorn. See README for Windows/WSL.
+port between choosing it and starting Uvicorn.
 
 Syntax used in this file:
 - @ introduces a decorator that applies behavior or metadata to a function.

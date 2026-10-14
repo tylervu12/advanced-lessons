@@ -2,7 +2,7 @@
 
 Five standalone lessons covering AWS pipelines, FastAPI, testing, and machine learning.
 
-| Date | Lesson | Start here |
+| Date | Lesson | Project |
 | --- | --- | --- |
 | September 11, 2026 | Contract clause extraction with AWS, OpenAI, and Neon | [README](9-11-2026/README.md) |
 | September 18, 2026 | Business website classification with FastAPI and OpenAI | [README](9-18-2026/README.md) |
