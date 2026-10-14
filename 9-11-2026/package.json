@@ -1,0 +1,48 @@
+{
+  "name": "contract-clause-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AWS CDK demo pipeline that extracts contract clauses into Neon Postgres.",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "secrets:sync": "tsx scripts/sync-secrets.ts",
+    "check": "npm run build && npm test && npm run synth"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/client-secrets-manager": "^3.0.0",
+    "@aws-sdk/client-sqs": "^3.0.0",
+    "@neon/config": "^1.4.0",
+    "@neon/env": "^1.3.0",
+    "@neondatabase/serverless": "^1.0.0",
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0",
+    "csv-parse": "^7.0.2",
+    "dotenv": "^17.0.0",
+    "drizzle-orm": "^0.45.2",
+    "openai": "^7.15.0",
+    "pdf-parse": "1.1.1",
+    "source-map-support": "^0.5.21",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.0",
+    "@types/node": "^24.0.0",
+    "@types/pdf-parse": "^1.1.5",
+    "aws-cdk": "^2.0.0",
+    "drizzle-kit": "^0.31.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.0"
+  },
+  "overrides": {
+    "esbuild": "^0.25.0"
+  }
+}

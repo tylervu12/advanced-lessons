@@ -1,0 +1,8 @@
+.env
+.neon
+.agents/
+skills-lock.json
+node_modules/
+cdk.out/
+coverage/
+.DS_Store

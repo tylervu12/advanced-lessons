@@ -1,0 +1,7 @@
+# These packages are installed into the Lambda deployment package.
+# FastAPI handles HTTP routing, validation integration, and interactive docs.
+fastapi==0.141.1
+# Mangum adapts API Gateway/Lambda events to FastAPI.
+mangum==0.22.0
+# Pydantic defines and validates our request and response data models.
+pydantic==2.13.5

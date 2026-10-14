@@ -1,0 +1,6 @@
+{
+  "app": "npx tsx bin/contract-demo.ts",
+  "context": {
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true
+  }
+}

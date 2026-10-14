@@ -1,0 +1,5 @@
+# These packages run locally to describe and deploy infrastructure, not in Lambda.
+# aws-cdk-lib provides the AWS resource definitions used by our stack.
+aws-cdk-lib==2.270.0
+# constructs provides the base building blocks that CDK resources inherit from.
+constructs==10.8.1

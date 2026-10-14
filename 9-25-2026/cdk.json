@@ -1,0 +1,4 @@
+{
+  "app": "python infra/app.py",
+  "output": ".build/cdk.out"
+}

@@ -1,0 +1,7 @@
+# Local development and deployment tools. Lambda only uses api/requirements.txt.
+# -r includes another requirements file. Install everything here with:
+# python -m pip install -r requirements.txt
+-r api/requirements.txt
+-r infra/requirements.txt
+# Uvicorn serves FastAPI on your computer; AWS uses the Mangum adapter instead.
+uvicorn==0.54.0

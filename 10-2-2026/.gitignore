@@ -1,0 +1,10 @@
+# Local environments, generated databases, and test reports do not belong in Git.
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+data/
+*.sqlite3
+*.sqlite3-*
+.DS_Store

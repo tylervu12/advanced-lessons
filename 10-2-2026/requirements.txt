@@ -1,0 +1,7 @@
+# Small, explicit dependency ranges; requirements-lock.txt records the tested versions.
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+# Current Starlette TestClient uses httpx2; our real HTTP client uses it too.
+httpx2>=2.13,<3
+pytest>=8,<9
+pytest-cov>=6,<8

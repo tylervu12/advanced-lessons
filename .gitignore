@@ -1,0 +1,30 @@
+# Local credentials and service configuration
+.env
+.env.*
+!.env.example
+.neon
+.aws/
+credentials.json
+*.pem
+*.key
+.agents/
+.codex/
+skills-lock.json
+
+# Dependencies, generated builds, and caches
+.venv/
+venv/
+node_modules/
+.build/
+cdk.out/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+coverage/
+.coverage
+htmlcov/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store

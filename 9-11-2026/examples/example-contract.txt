@@ -1,0 +1,12 @@
+SOFTWARE SERVICES AGREEMENT
+
+This agreement is between Example Health and Demo Software Company.
+
+8. Confidentiality
+Each party must keep the other party's non-public business information confidential and may use it only to perform obligations under this agreement.
+
+9. Technology Upgrades
+The provider will install supported technology upgrades and security updates during the term at no additional charge to the customer.
+
+10. Renewal
+This agreement renews automatically for successive one-year terms unless either party gives written notice of non-renewal at least thirty days before the current term ends.
