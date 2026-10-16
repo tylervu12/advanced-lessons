@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loan Risk Observatory</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script defer src="/static/app.js"></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="/"
+        ><span class="brand-icon">◈</span
+        ><span>LOAN RISK<small>OBSERVATORY</small></span></a
+      >
+      <div class="workspace-label">WORKSPACE <span>LOCAL</span></div>
+      <nav aria-label="Dashboard sections">
+        <button class="nav active" data-view="predictions">
+          <span>01</span> Predictions
+        </button>
+        <button class="nav" data-view="drift"><span>02</span> Drift</button>
+        <button class="nav" data-view="outcomes">
+          <span>03</span> Outcomes
+        </button>
+      </nav>
+      <div class="side-bottom">
+        <span class="live-dot"></span> Loan monitoring
+        <p>Synthetic loans. Real model.<br />90-day outcome window.</p>
+        <div class="lesson">ADVANCED LESSONS / 10.16</div>
+      </div>
+    </aside>
+    <div class="shell">
+      <header>
+        <span class="breadcrumb"
+          >Workspace <span>/</span>
+          <strong id="crumb">Predictions</strong></span
+        >
+        <div class="header-right">
+          <span class="synthetic">SYNTHETIC DATA</span
+          ><span id="clock">Loading…</span>
+        </div>
+      </header>
+      <main>
+        <div class="page-heading">
+          <div>
+            <h1 id="page-title">Predictions</h1>
+            <p id="page-subtitle">Loan decisions and their model versions.</p>
+          </div>
+          <label class="version-filter"
+            >View model<select id="version">
+              <option value="all">All versions</option>
+              <option value="v1">Model v1</option>
+              <option value="v2">Model v2</option>
+            </select></label
+          >
+        </div>
+        <div id="error-banner" role="alert" hidden></div>
+        <div id="content" aria-live="polite">
+          <div class="loading">Loading loan data…</div>
+        </div>
+        <footer>
+          <span>LOAN RISK OBSERVATORY</span
+          ><span>Drift is a signal. Outcomes provide evidence.</span>
+        </footer>
+      </main>
+    </div>
+    <dialog id="details">
+      <div class="dialog-heading">
+        <h2>Decision trace</h2>
+        <button id="close-detail" aria-label="Close details">×</button>
+      </div>
+      <div id="detail-content"></div>
+    </dialog>
+    <div id="toast" role="status" hidden></div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Advanced Lessons
 
-Five standalone lessons covering AWS pipelines, FastAPI, testing, and machine learning.
+Six standalone lessons covering AWS pipelines, FastAPI, testing, and machine learning.
 
 | Date | Lesson | Project |
 | --- | --- | --- |
@@ -9,3 +9,4 @@ Five standalone lessons covering AWS pipelines, FastAPI, testing, and machine le
 | September 25, 2026 | Shipping quote API and AWS CDK deployment | [README](9-25-2026/README.md) |
 | October 2, 2026 | Store API with unit, integration, and end-to-end tests | [README](10-2-2026/README.md) |
 | October 9, 2026 | Predicting California house prices | [Notebook](10-9-2026/house_prices_demo.ipynb) |
+| October 16, 2026 | Loan-risk MLOps: predictions, drift, and outcomes | [README](10-16-2026/README.md) |
